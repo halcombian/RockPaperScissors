@@ -19,7 +19,8 @@ function game() {
         const playerSelection = prompt();
         const computerSelection = computerPlay();
         playRound(playerSelection, computerSelection);
-        console.log("Score: " + playerScore + " - " + computerScore);
+        document.getElementById("gameOutput").innerHTML = "Score: " + playerScore + " - " + computerScore;
+        //console.log("Score: " + playerScore + " - " + computerScore);
     }
 }
 
